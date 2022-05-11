@@ -2,7 +2,7 @@ package elice001;
 
 import java.util.Scanner;
 
-public class 반복문2 {
+public class 반복문3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -13,20 +13,21 @@ public class 반복문2 {
 		
 		double line = scan.nextDouble();
 		
-		String tree = "";
+		String startree = "";
 		
 		for (int linenum = 1; linenum <= line; linenum++) {
 			for (int num = 1; num <= linenum; num++) {
-				tree += "*";
+				startree += "*";
 			}
-			
-			tree += "";
+			if (linenum <= line-1) {
+			startree += "";
 		}
-			System.out.println(tree);
+			System.out.println(startree);
 			
 			scan.close();
 			}
 		
+	
 	}
-
+}
 
